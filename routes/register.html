@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin: 20px;">Online Voting System</h1>
+    <hr style="width: 100%; height: 5px; border: 2px solid black; background-color:blueviolet;">
+    <div id="Register">
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <h3>Registration</h3>
+            <input type="text" name="name" placeholder="Name">
+            <input type="number" name="mobile"   placeholder="Phone Number">
+            <input type="password" name="password"  placeholder="Password">
+            <input type="password" name="cpassword"  placeholder="Confirm Password">
+            <input type="text" name="address"  placeholder="Address">
+            <input type="file" name="photo" >
+            <select name="role" >
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+            <button  class="button" >Register</button>
+            <p>Already user ? <a href="../Login.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>

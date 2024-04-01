@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#login
+{
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 80%;
+    margin-top: 10%;
+}
+
+#login form
+{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#login input
+{
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#login select
+{
+    width: 85%;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* ----------------------------------------------------------- */
+
+#Register
+{
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* display: none; */
+}
+
+#Register form
+{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#Register input
+{
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#Register select
+{
+    width: 85%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.button
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+}
+
+.button:hover
+{
+    background-color: yellow;
+    color: black;
+}
