@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
     <h1 style="text-align: center; margin: 20px;">Online Voting System</h1>
     <hr style="width: 100%; height: 5px; border: 2px solid black; background-color:blueviolet;">
     <div id="login">
-        <form action="" method="post">
+        <form action="./api/login.php" method="POST">
             <h3>Login</h3>
             <input type="number" name = "mobile"  placeholder = "Phone Number">
             <input type="password" name = "password"  placeholder = "Password">
@@ -18,7 +20,7 @@
                 <option value = "1">Voter</option>
                 <option value = "2">Group</option>
             </select>
-            <button type="submit" class="button" id = "login_button">Login</button>
+            <button type="submit" class="button">Login</button>
             <p style="margin: 10px;">New user? <a href="/Register.html" class='toggle'>Register here</a></p>
         </form>
     </div>
