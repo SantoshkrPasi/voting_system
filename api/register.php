@@ -14,7 +14,7 @@
    if($password == $cpassword)
    {
     move_uploaded_file($tmp_name,"../upload/$image");
-    $insert = mysqli_query($connect , "INSERT INTO user (name,mobile,address,password,photo,role,status,votes) VALUES ('$name','$mobile','$password','$address','$image','$role',0,0)");
+    $insert = mysqli_query($connect , "INSERT INTO user (name,mobile,address,password,photo,role,status,votes) VALUES ('$name','$mobile','$address','$password','$image','$role',0,0)");
     if($insert)
     {
          echo `

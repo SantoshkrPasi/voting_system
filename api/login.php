@@ -6,7 +6,11 @@ $mobile = $_POST['mobile'];
 $password = $_POST['password'];
 $role = $_POST['role'];
 
-$check = mysqli_query($connect , "SELECT * FROM user WHERE mobile = '$mobile' AND passwod = '$password' AND role = '$role' ");
+$check = mysqli_query($connect , "SELECT * FROM user WHERE mobile = '$mobile' AND password = '$password' AND role = '$role' ");
+if ($check === false) {
+    // Error handling
+    die('Error executing query: ' . mysqli_error($connect));
+}
 
 if(mysqli_num_rows($check) > 0)
 {
@@ -17,19 +21,19 @@ if(mysqli_num_rows($check) > 0)
     $_SESSION['userdata'] = $userdata;
     $_SESSION['groupsdata'] = $groupsdata;
 
-    echo `
+    echo "
     <script>
     window.location = '../routes/Dashboard.php';
-    </script>`;    
+    </script>";    
 }
 else
 {
-    echo `
+    echo "
     <script>
-     alert("Invalid Credential or User not found!");
+     alert('Invalid Credential or User not found!');
      window.location = '../Login.html';
     </script>
-    `
+    ";
 }
 
 ?>
